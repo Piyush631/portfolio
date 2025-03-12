@@ -20,7 +20,7 @@ export function App() {
 <div className="h-full w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
 
   <BrowserRouter>
-  {location.pathname !== "/home" && <Back />}
+
   <ScrollToTop />
 
   <Routes>
