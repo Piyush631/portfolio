@@ -10,7 +10,7 @@ import GymPage from "./pages/gym";
 import AirbnbPage from "./pages/airbnb";
 import ContactMe from "./pages/contactPage";
 import ScrollToTop from "./components/ScrollToTop";
-import Back from "./components/Back";
+
 
 
 export function App() {
