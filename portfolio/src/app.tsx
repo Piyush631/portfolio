@@ -24,7 +24,7 @@ export function App() {
   <ScrollToTop />
 
   <Routes>
-    <Route path="/home" element={<Main/>}/>
+    <Route path="/" element={<Main/>}/>
     <Route path="/brainly" element={<ProjectPage/>}/>
     <Route path="/layers" element={<LayersPage/>}/>
     <Route path="/chatsphere" element={<ChatPage/>}/>
