@@ -65,7 +65,7 @@ export default function Project(){
           </div>
 
 </Link>
-<a href="/chatsphere"> 
+<Link to="/chatsphere"> 
           <div className="lg:h-[450px] mt-8 lg:w-[580px] md:h-[340px] md:w-[330px] h-[320px] w-[300px]  text-gray-600 hover:text-black ">
            <div className="h-full flex justify-center items-center w-full bg-[#EAEAEA] rounded-2xl">
             <div className=" relative md:h-[280px]  md:w-[300px] h-[280px] w-[260px]   lg:h-[355px]  lg:w-[455px] ">   
@@ -91,7 +91,7 @@ export default function Project(){
           </div>
            </div>
            
-        </a>
+        </Link>
         <Link to="/wanderlust"> 
            <div className=" h-[320px] w-[400px] text-gray-600 lg:h-[450px] mt-8 lg:w-[580px] md:h-[340px] md:w-[330px]  hover:text-black ">
             <div className="h-full flex justify-center items-center w-full bg-[#EAEAEA] rounded-2xl">
