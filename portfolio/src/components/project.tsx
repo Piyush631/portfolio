@@ -1,4 +1,5 @@
 import {easeInOut, motion} from "framer-motion"
+import { Link } from "react-router-dom"
 
 export default function Project(){
     return (
@@ -123,7 +124,7 @@ export default function Project(){
           </div>
          </a>
            
-         <a href="https://piyush631-portfolio.netlify.app/gym"> 
+         <Link to="/gym"> 
            <div className=" h-[320px] w-[400px] text-gray-600 lg:h-[450px] mt-8 lg:w-[580px] md:h-[340px] md:w-[330px]  hover:text-black ">
             <div className="h-full flex justify-center items-center w-full bg-[#EAEAEA] rounded-2xl">
             <div className=" relative md:h-[280px] md:w-[300px] h-[280px] w-[260px]   lg:h-[350px]  lg:w-[460px] rounded-2xl  ">   
@@ -153,7 +154,7 @@ export default function Project(){
         </div>
           </div>
           </div>
-         </a>
+         </Link>
 
         </div>
     )
