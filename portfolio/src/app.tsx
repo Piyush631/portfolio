@@ -24,7 +24,7 @@ export function App() {
     <Route path="/brainly" element={<ProjectPage/>}/>
     <Route path="/layers" element={<LayersPage/>}/>
     <Route path="/chatsphere" element={<ChatPage/>}/>
-    <Route path="/gym" element={<GymPage/>}/>
+    <Route path="https://piyush631-portfolio.netlify.app/gym" element={<GymPage/>}/>
     <Route path="/wanderlust" element={<AirbnbPage/>}/>
 <Route path="/contact" element={<ContactMe/>} />
   </Routes>
