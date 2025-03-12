@@ -31,6 +31,7 @@ export function App() {
     <Route path="/gym" element={<GymPage/>}/>
     <Route path="/wanderlust" element={<AirbnbPage/>}/>
 <Route path="/contact" element={<ContactMe/>} />
+<Route path="*" element={<ProjectPage/>} />
   </Routes>
   {location.pathname !== "/contact" && <Contact />}
   </BrowserRouter>
