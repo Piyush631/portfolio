@@ -4,6 +4,7 @@ import { ReactLenis } from "lenis/react";
 import { useEffect } from "react";
 import {motion} from "framer-motion"
 import ContactHover from "../components/ContactHover";
+import Back from "../components/Back";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -67,6 +68,9 @@ export default function AirbnbPage() {
     };
 
     return (
+        <div>
+<Back/>
+        
       <div className="w-full pt-24 px-8">
                          <ReactLenis root>
                              <div className="flex pt-24 flex-col gap-10">
@@ -130,7 +134,7 @@ export default function AirbnbPage() {
                              {generateRows()}
                              </div>
                          </ReactLenis>
-                         
+                         </div>
                      </div>
     );
 }

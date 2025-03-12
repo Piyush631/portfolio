@@ -39,7 +39,7 @@ export default function Contact (){
 
       
       <div className=" flex justify-center pt-8">
-     <a href="/contact">
+     <Link to="/contact">
       <div className="bg-white/40  group h-15 rounded-4xl w-[280px]  md:w-[500px] flex justify-center items-center lg:w-40">
      
        <button className="bg-black  cursor-pointer group py-[11px] lg:w-36 md:w-[484px]  w-[274px] rounded-4xl text-white/70 flex justify-center items-center gap-2 hover:shadow-[0px_-15px_20px_rgba(255,255,255,0.2)]  hover:shadow-white/40">
@@ -49,12 +49,12 @@ export default function Contact (){
   </div>
 </button>
 
-        </div> </a> 
+        </div> </Link> 
      
       </div>
 
       <div className=" flex justify-center pt-8">
-     <Link to="/contact">
+    
       <div className="bg-white/40  group h-15 rounded-4xl w-[280px]  md:w-[500px] flex justify-center items-center lg:w-40">
      
        <button className="bg-black  cursor-pointer group py-[11px] lg:w-36 md:w-[484px]  w-[274px] rounded-4xl text-white/70 flex justify-center items-center gap-2 hover:shadow-[0px_-15px_20px_rgba(255,255,255,0.2)]  hover:shadow-white/40">
@@ -65,7 +65,7 @@ export default function Contact (){
   </div>
 </button>
 
-        </div> </Link> 
+        </div> 
      
       </div>
       </div>

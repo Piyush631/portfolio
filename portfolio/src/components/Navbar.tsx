@@ -35,7 +35,7 @@ export default function Navbar(){
             <div className=" h-full w-full flex justify-between items-center"> 
                 
 <div className="font-coursive h-10 w-20 px-2 flex italic justify-center font-secondary scale-y-120 items-center rounded-full bg-white ">
- <Link to="/"><div>Piyush</div>   </Link>
+ <Link to="/home"><div>Piyush</div>   </Link>
     </div>
 <div onClick={()=>{
     setOpen(!open)

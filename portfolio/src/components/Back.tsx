@@ -9,7 +9,7 @@ export default function Back(){
         transition={{ease:"easeIn", duration:0.5,delay:0.5}}
         
         className=" fixed w-full px-12 py-5  z-50">
-             <Link to="/"> <div className="flex  gap-1 items-center">
+             <Link to="/home"> <div className="flex  gap-1 items-center">
 
  <div className="bg-white w-16 px-3 py-1  h-8 font-secondary scale-y-120 italic rounded-3xl flex justify-center items-center">
 
