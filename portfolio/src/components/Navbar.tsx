@@ -1,10 +1,10 @@
-import { useEffect, useState } from "preact/hooks"
+import {  useState } from "preact/hooks"
 import {motion} from "framer-motion"
 import { RiTwitterXLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
 import { IoLogoGithub } from "react-icons/io5";
-import { useLocation } from "react-router-dom";
-import { LiaLongArrowAltLeftSolid } from "react-icons/lia";
+
+
 import { Link } from "react-router-dom";
 
 
@@ -24,12 +24,7 @@ const listVariant={
 }
 export default function Navbar(){
     const [open,setOpen]=useState(false)
-    const pathName = useLocation().pathname;  
-    const [path,setPath]=useState("")
-    console.log(pathName);
-    useEffect(()=>{
-            setPath(pathName)
-    },[])
+   
     return (
         <motion.div 
         initial={{y:-200}}
@@ -40,17 +35,7 @@ export default function Navbar(){
             <div className=" h-full w-full flex justify-between items-center"> 
                 
 <div className="font-coursive h-10 w-20 px-2 flex italic justify-center font-secondary scale-y-120 items-center rounded-full bg-white ">
-{path==="/"? <Link to="/"><div>Piyush</div>   </Link>:    <a href="/"> <div className="flex justify-center gap-1 items-center">
-
- 
-    <div className="text-lg scale-x-125"><LiaLongArrowAltLeftSolid />
-    </div>
-    <div>
-        Back
-    </div>
-
-    </div>
-    </a>}
+ <Link to="/"><div>Piyush</div>   </Link>
     </div>
 <div onClick={()=>{
     setOpen(!open)
