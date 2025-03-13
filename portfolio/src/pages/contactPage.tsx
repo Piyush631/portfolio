@@ -35,18 +35,17 @@ export default function ContactMe(){
       <div className="h-screen flex flex-col lg:flex-row   w-screen bg-gradient-to-r from-[#DFDFDF] to-[#CECECE] ">
         <Back/>
 
-<div className="md:h-full h-96  w-full flex flex-col gap-4 justify-center items-center text-black">
+<div className="md:h-full h-96 mt-8 w-full flex flex-col gap-4 justify-center items-center text-black">
 
 
-    <div>
+    <div className="hidden md:flex">
     <TypeAnimation
       sequence={[
         'Welcome',
         1000,
         'Say Hello',
         1000, 
-        'Feel free to message me',
-        1000, 
+  
        
       
       ]}
