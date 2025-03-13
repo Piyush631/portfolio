@@ -1,8 +1,6 @@
 import Main from "./pages/Main";
-
-import { BrowserRouter, Route,  Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import ProjectPage from "./pages/ProjectPage";
-
 import Contact from "./components/Contact";
 import LayersPage from "./pages/layers";
 import ChatPage from "./pages/chatsphere";
@@ -11,31 +9,34 @@ import AirbnbPage from "./pages/airbnb";
 import ContactMe from "./pages/contactPage";
 import ScrollToTop from "./components/ScrollToTop";
 
-
-
-export function App() {
-  const excludedRoutes = ['https://portfolio-nu-lovat-76.vercel.app/contact'];
+function AppContent() {
+  const location = useLocation(); 
 
   return (
-<div className="h-full w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
+    <div className="h-full w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
+      <ScrollToTop />
 
-  <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/brainly" element={<ProjectPage />} />
+        <Route path="/layers" element={<LayersPage />} />
+        <Route path="/chatsphere" element={<ChatPage />} />
+        <Route path="/gym" element={<GymPage />} />
+        <Route path="/wanderlust" element={<AirbnbPage />} />
+        <Route path="/contact" element={<ContactMe />} />
+        <Route path="*" element={<ProjectPage />} />
+      </Routes>
 
-  <ScrollToTop />
+     
+      {location.pathname !== "/contact" && <Contact />}
+    </div>
+  );
+}
 
-  <Routes>
-    <Route path="/" element={<Main/>}/>
-    <Route path="/brainly" element={<ProjectPage/>}/>
-    <Route path="/layers" element={<LayersPage/>}/>
-    <Route path="/chatsphere" element={<ChatPage/>}/>
-    <Route path="/gym" element={<GymPage/>}/>
-    <Route path="/wanderlust" element={<AirbnbPage/>}/>
-<Route path="/contact" element={<ContactMe/>} />
-<Route path="*" element={<ProjectPage/>} />
-  </Routes>
-  {!excludedRoutes.includes(location.pathname) && <Contact />}
-  </BrowserRouter>
-
-</div>
-  )
+export function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
+    </BrowserRouter>
+  );
 }
