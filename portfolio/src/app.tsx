@@ -14,7 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 export function App() {
-
+  const excludedRoutes = ['/contact'];
 
   return (
 <div className="h-full w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
@@ -33,7 +33,7 @@ export function App() {
 <Route path="/contact" element={<ContactMe/>} />
 <Route path="*" element={<ProjectPage/>} />
   </Routes>
-  {location.pathname !== "/contact" && <Contact />}
+  {!excludedRoutes.includes(location.pathname) && <Contact />}
   </BrowserRouter>
 
 </div>
