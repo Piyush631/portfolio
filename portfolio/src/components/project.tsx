@@ -1,7 +1,9 @@
 import {easeInOut, motion} from "framer-motion"
+
 import { Link } from "react-router-dom"
 
 export default function Project(){
+
     return (
         <div  id="project" className= "h-full    w-full mt-24 flex  flex-wrap  justify-center gap-8  px-12" >
       

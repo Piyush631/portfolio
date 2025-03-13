@@ -1,7 +1,7 @@
 
 
 import { useRef, useState } from "react";
-
+import Back from "../components/Back";
 import emailjs from '@emailjs/browser';
 import{motion} from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation';
@@ -30,7 +30,9 @@ export default function ContactMe(){
       );
   };
     return (
+
       <div className="h-screen flex flex-col md:flex-row   w-screen bg-black/90 ">
+        <Back/>
 
 <div className="md:h-full h-96 md:w-1/2  w-full flex flex-col gap-4 justify-center items-center text-white">
 
@@ -54,8 +56,7 @@ export default function ContactMe(){
     <TypeAnimation
       sequence={[
        
-        'I am open for freelance projects',
-        1000, 
+        
         'Feel free to  email me ',
         1000,
       
