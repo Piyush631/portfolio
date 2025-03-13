@@ -14,7 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 
 export function App() {
-  const excludedRoutes = ['/contact'];
+  const excludedRoutes = ['https://portfolio-nu-lovat-76.vercel.app/contact'];
 
   return (
 <div className="h-full w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
