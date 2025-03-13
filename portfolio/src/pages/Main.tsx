@@ -10,7 +10,7 @@ import Skills from "../components/Skills";
 
 export default function Main(){
     return (
-        <div className="h-auto  w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
+        <div className="h-auto  w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE] ">
       <Navbar/>
         <Introduction/>
         <Project/>

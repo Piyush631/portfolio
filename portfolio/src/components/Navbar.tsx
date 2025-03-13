@@ -1,8 +1,8 @@
-import {  useState } from "preact/hooks"
+import {  useEffect, useState } from "preact/hooks"
 import {motion} from "framer-motion"
 import { RiTwitterXLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoGithub, IoMoonOutline, IoSunny } from "react-icons/io5";
 
 
 import { Link } from "react-router-dom";
@@ -24,7 +24,24 @@ const listVariant={
 }
 export default function Navbar(){
     const [open,setOpen]=useState(false)
-   
+    const [darkMode, setDarkMode] = useState(false);
+    useEffect(() => {
+ 
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.classList.add("dark");
+          setDarkMode(true);
+        }
+      }, []);
+      const toggleDarkMode = () => {
+        if (darkMode) {
+          document.documentElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        } else {
+          document.documentElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+        setDarkMode(!darkMode);
+      };
     return (
         <motion.div 
         initial={{y:-200}}
@@ -37,6 +54,16 @@ export default function Navbar(){
 <div className="font-coursive h-10 w-20 px-2 flex italic justify-center font-secondary scale-y-120 items-center rounded-full bg-white ">
  <Link to="/home"><div>Piyush</div>   </Link>
     </div>
+
+    
+   {/*  <div className=" flex text-xl" onClick={toggleDarkMode}>
+          {
+            darkMode ? <div className="text-white"><IoMoonOutline /></div>: <div className="text-black">   <IoSunny/>  </div>
+
+
+          }
+          </div> */}
+       
 <div onClick={()=>{
     setOpen(!open)
     
