@@ -5,6 +5,7 @@ import Back from "../components/Back";
 import emailjs from '@emailjs/browser';
 import{motion} from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation';
+import Images from "../components/imagehover";
 
 export default function ContactMe(){
     const form = useRef<HTMLFormElement | null>(null);
@@ -31,53 +32,101 @@ export default function ContactMe(){
   };
     return (
 
-      <div className="h-screen flex flex-col md:flex-row   w-screen bg-black/90 ">
+      <div className="h-screen flex flex-col lg:flex-row   w-screen bg-gradient-to-r from-[#DFDFDF] to-[#CECECE] ">
         <Back/>
 
-<div className="md:h-full h-96 md:w-1/2  w-full flex flex-col gap-4 justify-center items-center text-white">
+<div className="md:h-full h-96  w-full flex flex-col gap-4 justify-center items-center text-black">
 
 
     <div>
     <TypeAnimation
       sequence={[
-       
+        'Welcome',
+        1000,
         'Say Hello',
+        1000, 
+        'Feel free to message me',
         1000, 
        
       
       ]}
       wrapper="span"
       speed={20}
-      style={{ fontSize: '2em', display: 'inline-block' }}
+      style={{  display: 'inline-block' }}
+      className="lg:text-3xl md:text-3xl text-xl"
       repeat={Infinity}
     />
     </div>
     <div>
-    <TypeAnimation
-      sequence={[
-       
+   <motion.div 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              ease: [0.25, 0.1, 0.25, 1], 
+              duration: 1.2,}} 
+            
+            className="flex text-black lg:mt-24 md:mt-16 mt-8 justify-center items-center gap-2 lg:text-5xl md:text-5xl text-3xl">
+                <div className="font-secondary">
+                I'm <span className="text-[#717171] italic ">Piyush</span>
+                </div>
+                <div className="h-12 w-16 md:h-14 md:w-20 border-1 rounded-4xl">
+                    <img src="./photo.jpg " className="h-full w-full  border-1 rounded-4xl object-cover"/>
+                    
+                </div>
+                <span className="font-secondary">,</span>
+     
+            </motion.div>
+            
+            <motion.div
+             initial={{ y: 20, opacity: 0 }}
+             animate={{ y: 0, opacity: 1 }}
+             transition={{
+               ease: [0.25, 0.1, 0.25, 1], 
+               duration: 1.2,delay:0.3}} 
         
-        'Feel free to  email me ',
-        1000,
-      
-      ]}
-      wrapper="span"
-      speed={20}
-      style={{ fontSize: '2em', display: 'inline-block' }}
-      repeat={Infinity}
-    />
+            className="flex   text-black justify-center items-center gap-2 lg:text-5xl md:text-5xl text-3xl ">
+                <div className="font-secondary"> 
+             a Fullstack
+                </div>
+                <div className="h-12 w-16 md:h-14 md:w-20 border-4 rounded-4xl">
+                  <Images/>
+                    
+                </div>
+                <span className="text-[#717171] font-secondary italic "> Developer</span>
+     
+        
+            </motion.div>
+        
+            <motion.div 
+            
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              ease: [0.25, 0.1, 0.25, 1], 
+              duration: 1.2,delay:0.5}} 
+            className="flex  text-black justify-center items-center gap-2 lg:text-5xl md:text-5xl text-3xl ">
+                <div className="font-secondary">
+                based in India
+                </div>
+                <div className="h-12 w-16 md:h-14 md:w-20 border-1 rounded-4xl">
+                    <img src="./photo.jpg" className="h-full w-full  border-1 rounded-4xl object-cover"/>
+                    
+                </div>
+               
+     
+            </motion.div>
     </div>
   
 </div>
         <motion.div
-        className="md:h-full md:w-1/2 w-full h-1/2"
+        className=" w-full h-full"
         initial={{ y: "-200vh" }}
         animate={{ y: "0%" }}
         transition={{ duration: 1 }}
       >
-        <div className="  h-full pt-16  text-white flex flex-col items-center justify-center lg:flex-row lg:justify-around px-2 sm:px-4 md:px-8 lg:px-12 xl:px-12">
+        <div className="  h-full pt-16  text-black flex flex-col items-center justify-center lg:flex-row lg:justify-around px-2 sm:px-4 md:px-8 lg:px-12 xl:px-12">
           
-            <form ref={form} onSubmit={sendEmail} className="right h-full lg:h-full lg:w-[480px]  w-full flex flex-col justify-center  gap-5 p-6 lg:p-8 md:p-6 backdrop-blur-3xl text-white rounded-xl ">
+            <form ref={form} onSubmit={sendEmail} className="right text-black h-full lg:h-full lg:w-[480px]  w-full flex flex-col justify-center  gap-5 p-6 lg:p-8 md:p-6 backdrop-blur-3xl  rounded-xl ">
                
 
               

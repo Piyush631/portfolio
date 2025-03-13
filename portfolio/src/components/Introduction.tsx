@@ -66,7 +66,7 @@ export default function Introduction(){
                 </div>
           
             </div>
-         <div className="h-10 w-full  fixed bottom-0 z-5 border-none  backdrop-blur-xs ">
+         <div className="h-10 w-full  fixed bottom-0 z-5 backdrop-blur-xs   drop-shadow-2xl  ">
 
          </div>
 
