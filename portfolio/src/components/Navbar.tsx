@@ -1,8 +1,8 @@
-import {  useEffect, useState } from "preact/hooks"
+import {   useState } from "preact/hooks"
 import {motion} from "framer-motion"
 import { RiTwitterXLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
-import { IoLogoGithub, IoMoonOutline, IoSunny } from "react-icons/io5";
+import { IoLogoGithub} from "react-icons/io5";
 
 
 import { Link } from "react-router-dom";
@@ -24,7 +24,7 @@ const listVariant={
 }
 export default function Navbar(){
     const [open,setOpen]=useState(false)
-    const [darkMode, setDarkMode] = useState(false);
+  /*  const [darkMode, setDarkMode] = useState(false);
     useEffect(() => {
  
         if (localStorage.getItem("theme") === "dark") {
@@ -41,7 +41,7 @@ export default function Navbar(){
           localStorage.setItem("theme", "dark");
         }
         setDarkMode(!darkMode);
-      };
+      }; */
     return (
         <motion.div 
         initial={{y:-200}}
