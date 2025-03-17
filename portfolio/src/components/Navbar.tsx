@@ -48,7 +48,7 @@ export default function Navbar(){
         animate={{y:0}}
         transition={{ease:"easeIn", duration:0.5,delay:0.5}}
         
-        className=" fixed w-full px-12 py-5  z-50">
+        className="  fixed w-full px-12 py-5  z-100">
             <div className=" h-full w-full flex justify-between items-center"> 
                 
 <div className="font-coursive h-10 w-20 px-2 flex italic justify-center font-secondary scale-y-120 items-center rounded-full bg-white ">
