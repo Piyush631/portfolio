@@ -62,7 +62,6 @@ export default function Introduction(){
             </motion.div>
             <div className="flex justify-center w-full">
                 <div className="lg:w-1/3 md:w-full w-full mt-16 md:px-1 px-7 text-md text-[#717171] text-center">
-                I have 11 years of experience working on useful and mindful products together with startups and known brands
                 </div>
           
             </div>
