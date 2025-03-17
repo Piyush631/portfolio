@@ -136,14 +136,14 @@ export default function AirbnbPage() {
                 <div className="h-[1px] w-20 bg-gradient-to-r from-gray-700 to-gray-300"></div>
             </div>
             <div className="lg:text-4xl md:text-2xl text-xl font-secondary lg:pt-12 md:pt-8 pt-4 scale-y-120  text-center"><span className="text-black ">WanderLust</span> </div>
-            <div className="w-full  pt-10 flex justify-center">
-            <div className=" flex flex-wrap  gap-3 w-1/2 justify-center ">
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">HTML</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">JavaScript</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Express</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">EJS</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Mongoose</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">MongoDb</button>
+            <div className="w-full  lg:pt-10 pt-7 flex justify-center">
+            <div className=" flex flex-wrap  lg:gap-3 gap-2 lg:w-1/2 w-full justify-center ">
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md px-2 py-1 rounded-2xl hover:bg-white hover:text-black">HTML</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">JavaScript</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Express</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">EJS</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Mongoose</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md  px-2 py-1 rounded-2xl hover:bg-white hover:text-black">MongoDb</button>
             </div>
             </div>
           <div className=" flex justify-center pt-8">

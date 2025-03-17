@@ -55,7 +55,7 @@ export default function LayersPage() {
         const rows = [];
         for (let i = 1; i <= 2; i++) {
             rows.push(
-                <div key={i} className="row relative flex py-6 overflow-x-clip w-full justify-center  gap-4">
+                <div key={i} className="row  z-50 relative flex py-6 overflow-x-clip w-full justify-center  gap-4">
                     <div className="card relative left-card ov w-[500px]">
                         <img src={`./img-l-${2 * i - 1}.png`} className="rounded-2xl" style={{ transformOrigin: "center" }} />
                     </div>
@@ -124,18 +124,18 @@ export default function LayersPage() {
                        <div className="h-full  w-full text-black">
                 
                            
-                <div className="  z-20 pt-24 flex justify-center  items-center gap-4">
+                <div className="   pt-24 flex justify-center  items-center gap-4">
                 <div className="h-[1px] w-20 bg-gradient-to-r from-gray-300 to-gray-700"></div>
                 <div className="font-secondary scale-y-110  font-medium italic md:text-2xl text-lg text-center tracking-tighter text-black">Welcome</div>
                 <div className="h-[1px] w-20 bg-gradient-to-r from-gray-700 to-gray-300"></div>
             </div>
             <div className="lg:text-4xl md:text-2xl text-xl font-secondary lg:pt-12 md:pt-8 pt-4 scale-y-120  text-center"><span className="text-black ">Layers</span> </div>
-            <div className="w-full  pt-10 flex justify-center">
-            <div className=" flex flex-wrap  gap-3 w-1/2 justify-center ">
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">React js</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">TypeScript</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Framer Motion</button>
-              <button className="bg-black z-50 text-white cursor-pointer   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Tailwind CSS</button>
+            <div className="w-full  lg:pt-10 pt-7 flex justify-center">
+            <div className=" flex flex-wrap  lg:gap-3 gap-2 w-full lg:w-1/2 justify-center ">
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">React js</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">TypeScript</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Framer Motion</button>
+              <button className="bg-black z-50 text-white cursor-pointer text-xs lg:text-md   px-2 py-1 rounded-2xl hover:bg-white hover:text-black">Tailwind CSS</button>
           
             </div>
             </div>

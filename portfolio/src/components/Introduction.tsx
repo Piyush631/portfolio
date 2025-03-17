@@ -62,6 +62,7 @@ export default function Introduction(){
             </motion.div>
             <div className="flex justify-center w-full">
                 <div className="lg:w-1/3 md:w-full w-full mt-16 md:px-1 px-7 text-md text-[#717171] text-center">
+                I design and develop beautiful, functional, and user-friendly web applications that provide exceptional user experiences, leveraging modern technologies to create seamless and engaging digital solutions
                 </div>
           
             </div>
