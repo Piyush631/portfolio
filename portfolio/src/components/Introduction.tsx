@@ -15,7 +15,7 @@ export default function Introduction(){
                 I'm <span className="text-[#717171] italic ">Piyush</span>
                 </div>
                 <div className="h-12 w-16 md:h-16 md:w-24 border-1 rounded-4xl">
-                    <img src="./photo.jpg " className="h-full w-full  border-1 rounded-4xl object-cover"/>
+                    <img src="./pic2.jpg " className="h-full w-full  border-1 rounded-4xl object-cover"/>
                     
                 </div>
                 <span className="font-secondary">,</span>
@@ -54,7 +54,7 @@ export default function Introduction(){
                 based in India
                 </div>
                 <div className="h-12 w-16 md:h-16 md:w-24 border-1 rounded-4xl">
-                    <img src="./photo.jpg" className="h-full w-full  border-1 rounded-4xl object-cover"/>
+                    <img src="./pic2.jpg" className="h-full w-full  border-1 rounded-4xl object-cover"/>
                     
                 </div>
                

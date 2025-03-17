@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import Back from "../components/Back";
 import emailjs from '@emailjs/browser';
 import{motion} from 'framer-motion'
-import { TypeAnimation } from 'react-type-animation';
+
 import Images from "../components/imagehover";
 
 export default function ContactMe(){
@@ -32,29 +32,18 @@ export default function ContactMe(){
   };
     return (
 
-      <div className="h-screen flex flex-col lg:flex-row   w-screen bg-gradient-to-r from-[#DFDFDF] to-[#CECECE] ">
+      <div className="h-screen flex flex-col lg:flex-row overflow-hidden  w-screen bg-gradient-to-r from-[#DFDFDF] to-[#CECECE] ">
         <Back/>
 
 <div className="md:h-full h-96 mt-8 w-full flex flex-col gap-4 justify-center items-center text-black">
 
 
-    <div className="hidden md:flex">
-    <TypeAnimation
-      sequence={[
-        'Welcome',
-        1000,
-        'Say Hello',
-        1000, 
-  
-       
-      
-      ]}
-      wrapper="span"
-      speed={20}
-      style={{  display: 'inline-block' }}
-      className="lg:text-3xl md:text-3xl text-xl"
-      repeat={Infinity}
-    />
+    <div className="">
+    <div className="flex justify-center  items-center gap-4">
+            <div className="h-[1px] w-20 bg-gradient-to-r from-gray-300 to-gray-700"></div>
+            <div className="font-secondary scale-y-130 italic text-2xl text-center tracking-tighter text-[#948585]">Hello!</div>
+            <div className="h-[1px] w-20 bg-gradient-to-r from-gray-700 to-gray-300"></div>
+        </div>
     </div>
     <div>
    <motion.div 
@@ -69,7 +58,7 @@ export default function ContactMe(){
                 I'm <span className="text-[#717171] italic ">Piyush</span>
                 </div>
                 <div className="h-12 w-16 md:h-14 md:w-20 border-1 rounded-4xl">
-                    <img src="./photo.jpg " className="h-full w-full  border-1 rounded-4xl object-cover"/>
+                    <img src="./pic2.jpg " className="h-full w-full  border-1 rounded-4xl object-cover"/>
                     
                 </div>
                 <span className="font-secondary">,</span>
@@ -108,7 +97,7 @@ export default function ContactMe(){
                 based in India
                 </div>
                 <div className="h-12 w-16 md:h-14 md:w-20 border-1 rounded-4xl">
-                    <img src="./photo.jpg" className="h-full w-full  border-1 rounded-4xl object-cover"/>
+                    <img src="./pic2.jpg" className="h-full w-full  border-1 rounded-4xl object-cover"/>
                     
                 </div>
                
