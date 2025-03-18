@@ -58,7 +58,7 @@ export default function Skills(){
         dragConstraints={{top:0,left:0,bottom:0,right:0}}className= " relative bg-white px-3 cursor-grab text-black/85 font-medium  -rotate-3 h-11 left-12  -top-3 text-center  text-lg w-28  rounded-3xl py-1">Resarch</motion.button>
         </div>
         <div className="text-4xl py-5 scale-y-130 font-medium tracking-tight leading-11 font-secondary w-1/2 hidden text-center lg:flex">
-        I am a Computer Science Engineer skilled in Full Stack Web Development. I specialize in developing dynamic, high-performance web applications with smooth animations, scalable architectures, and optimized user experiences.
+         I specialize in developing dynamic, high-performance web applications with smooth animations, scalable architectures, and optimized user experiences.
         </div>
         <div className="flex flex-col  justify-center items-center gap-8"> 
         <motion.button 

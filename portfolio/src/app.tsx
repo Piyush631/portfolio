@@ -13,7 +13,7 @@ function AppContent() {
   const location = useLocation(); 
 
   return (
-    <div className="h-full w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
+    <div className="h-full  overflow-hidden w-full bg-gradient-to-r from-[#DFDFDF] to-[#CECECE]">
       <ScrollToTop />
 
       <Routes>

@@ -2,7 +2,7 @@ import Images from "./imagehover";
 import {motion} from "framer-motion"
 export default function Introduction(){
     return (
-        < div  id="home" className="flex flex-col   gap-2 pt-28 justify-center ">
+        < div  id="home" className="flex flex-col  overflow-hidden  gap-2 pt-28 justify-center ">
             <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
