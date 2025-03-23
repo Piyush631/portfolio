@@ -108,7 +108,7 @@ export default function LayersPage() {
                                 ease: [0.25, 0.1, 0.25, 1], 
                                 duration: 1.2,delay:0.7}} 
                            className="lg:flex-row flex flex-col gap-3">
-                              <a href="https://harkrishan-layers.netlify.app/ " target="_blank">
+                              <a href="https://piyush-layers.netlify.app/ " target="_blank">
                          <button className="bg-black shadow-2xl shadow-black hover:shadow-[0px_-5px_10px_rgba(255,255,255,0.2)] hover:shadow-black/40 font-semibold cursor-pointer text-white lg:w-28 w-full h-11 text-md rounded-3xl">
                                    Live Link 
                                </button>      </a>
